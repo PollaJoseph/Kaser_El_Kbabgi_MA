@@ -1,0 +1,83 @@
+import 'package:get/get.dart';
+
+class localstring extends Translations {
+  final String userName = "Ahmed Tawfek";
+  final String userPhoneNumber = "01101117611";
+  @override
+  // TODO: implement keys
+  Map<String, Map<String, String>> get keys => {
+        'en': {
+          "Unable to connect to the internet":"Unable to connect to the internet",
+          "LOGIN": "    LOGIN    ",
+          "sign up": "       SIGN UP       ",
+          "Continue with": "Continue with",
+          "Continue with Facebook": "Continue with Facebook",
+          "Continue with Google": "Continue with Google",
+          "E-mail": "E-mail",
+          "Password": "Password",
+          "Forgot Your Password ?": "Forgot Your Password ?",
+          "Login now": "        Login now        ",
+          "Username": "Username",
+          'Enter Your Email': 'Enter Your Email',
+          "Phone Number": "Phone Number",
+          'Enter Your Name': 'Enter Your Name',
+          "Already have an account? ": "     Already have an account? ",
+          "Don't have an account? ": "Don't have an account? ",
+          "login": "login",
+          "Sign Up": " sign up",
+          "Name :$userName": "Name: $userName",
+          "Phone :$userPhoneNumber": "Phone: $userPhoneNumber",
+          "Account information": "Account information",
+          "Change E-mail": "Change E-mail",
+          "Change Password": "Change Password",
+          "Language": "Language",
+          "Enter Strong Password": "Enter Strong Password",
+          'Enter Your Phone Number': 'Enter Your Phone Number',
+          "Logout": "Logout",
+          "Our Branches": "Our Branches",
+          "Fifth Settlement": "Fifth Settlement",
+          "Sheikh Zayed City": "Sheikh Zayed City",
+          "North Coast": "North Coast",
+          "Madinaty": "Madinaty",
+          "KASR ELKBABGI": "KASR ELKBABGI",
+          "Not just a restaurant": "Not just a restaurant"
+        },
+        'ar': {
+          "Unable to connect to the internet":"يتعذر الاتصال بالانترنت",
+          "LOGIN": "تسجيل دخول",
+          "Enter Your Password":"ادخل كلمه المرور الخاصه بك",
+          "Enter Strong Password": "ادخل كلمه مرور قويه",
+          'Enter Your Email': 'ادخل بريدك الالكتروني',
+          "sign up": "انشاء حساب  جديد",
+          "Continue with": "المتابعه باستخدام",
+          "Continue with Facebook": "المتابعه باستخدام فيسبوك",
+          "Continue with Google": "    المتابعه باستخدام جوجل",
+          "E-mail": "البريد الالكتروني",
+          'Enter Your Phone Number': "ادخل رقم هاتفك",
+          "Password": "كلمه المرور",
+          'Enter Your Name': 'ادخل اسمك',
+          "Forgot Your Password ?": "هل نسيت كلمه المرور؟",
+          "Login now": "تسجيل الدخول الان",
+          "Username": "اسم المستخدم",
+          "Phone Number": "رقم الهاتف",
+          "Already have an account? ": " هل تمتلك حساب ؟",
+          "Don't have an account? ": "لا امتلك حساب؟ ",
+          "login": "تسجيل الدخول",
+          "Sign Up": "انشاء حساب ",
+          "Name :$userName": "الاسم: $userName",
+          "Phone :$userPhoneNumber": "رقم الهاتف: $userPhoneNumber",
+          "Account information": "معلومات الحساب",
+          "Change E-mail": "تغيير البريد الالكتروني",
+          "Change Password": "تغيير كلمه المرور",
+          "Language": "لغه التطبيق",
+          "Logout": "تسجيل خروج",
+          "Our Branches": "فروعنا",
+          "Fifth Settlement": "التجمع الخامس",
+          "Sheikh Zayed City": "مدينة الشيخ زايد",
+          "North Coast": "الساحل الشمالي",
+          "Madinaty": "مدينتي",
+          "KASR ELKBABGI": "قصر الكبابجي",
+          "Not just a restaurant": "ليس مجرد مطعم"
+        }
+      };
+}
