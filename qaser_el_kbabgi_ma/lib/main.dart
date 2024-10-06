@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:qaser_el_kbabgi_ma/models/LanguageModel.dart';
+import 'package:qaser_el_kbabgi_ma/pages/SettingPage.dart';
 import 'package:qaser_el_kbabgi_ma/pages/SplashPage.dart';
 import 'package:sizer/sizer.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       translations: localstring(),
       locale: const Locale("en"),
-      home: const SplashPage(),
+      home: const SettingPage(),
     );
   }
 }

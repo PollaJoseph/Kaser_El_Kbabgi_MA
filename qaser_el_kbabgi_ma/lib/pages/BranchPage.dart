@@ -1,12 +1,12 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
-import 'package:qaser_el_kbabgi_restaurant/components/branchButton.dart';
-import 'package:qaser_el_kbabgi_restaurant/constants.dart';
+import 'package:qaser_el_kbabgi_ma/components/BranchButton.dart';
+import 'package:qaser_el_kbabgi_ma/constants.dart';
 import 'package:sizer/sizer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class branchScreen extends StatelessWidget {
-  const branchScreen({super.key});
+class BranchPage extends StatelessWidget {
+  const BranchPage({super.key});
 
   void FifthSettlementBranch() async {
     if (await canLaunch("https://maps.app.goo.gl/yZLWFK96uJ23LSXm8")) {
@@ -45,47 +45,46 @@ class branchScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: background,
+        backgroundColor: Background,
         title: Text(
           "Our Branches".tr,
-          style: TextStyle(color: white),
+          style: TextStyle(color: White),
         ),
       ),
-      backgroundColor: background,
+      backgroundColor: Background,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             height: 2.h,
           ),
-          branchButton(
+          BranchButton(
               onTap: () => FifthSettlementBranch(),
               cityName: "Fifth Settlement".tr,
-              branchImage: "images/Fifth Settlement.png"),
+              branchImage: FifthSettlementBranchImage ),
           SizedBox(
             height: 0.5.h,
           ),
-          branchButton(
+          BranchButton(
               onTap: () => SheikhZayedCityBranch(),
               cityName: "Sheikh Zayed City".tr,
-              branchImage: "images/Sheikh Zayed City.png"),
+              branchImage:SheikhZayedBranchImage ),
           SizedBox(
             height: 0.5.h,
           ),
-          branchButton(
+          BranchButton(
               onTap: () => NorthCoastBranch(),
               cityName: "North Coast".tr,
-              branchImage: "images/North Coast.png"),
+              branchImage:NorthCoastBranchImage ),
           SizedBox(
             height: 0.5.h,
           ),
-          branchButton(
+          BranchButton(
               onTap: () => MadinatyBranch(),
               cityName: "Madinaty".tr,
-              branchImage: "images/Madinaty.png"),
+              branchImage: MadinatyBranchImage ),
         ],
       ),
     );
   }
 }
-*/

@@ -26,26 +26,23 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     Locale? currentLocale = Get.locale;
 
-    // Conditionally set the font based on locale
     TextStyle textStyle;
 
     if (currentLocale?.languageCode == 'ar') {
-      // Use a different font for Arabic
       textStyle = GoogleFonts.tajawal(
         decoration: TextDecoration.underline,
         decorationColor: White,
         fontSize: 17.sp,
         fontWeight: FontWeight.w600,
-        color: White, // Use the textColor parameter, or default to Black
+        color: White, 
       );
     } else {
-      // Use default font for English
       textStyle = GoogleFonts.oswald(
         decoration: TextDecoration.underline,
         decorationColor: White,
         fontSize: 17.sp,
         fontWeight: FontWeight.w500,
-        color: White, // Use the textColor parameter, or default to Black
+        color: White, 
       );
     }
     return Scaffold(
